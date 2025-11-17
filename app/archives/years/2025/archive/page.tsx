@@ -1,6 +1,6 @@
 import Footer from '../components/Footer'
 
-const ARCHIVE_VIMEO_URL = 'https://vimeo.com/1137579677?share=copy&fl=sv&fe=ci'
+const ARCHIVE_VIMEO_URL = 'https://vimeo.com/1137579677?fl=ip&fe=ec'
 const VIMEO_EMBED_PARAMS =
   'autoplay=1&muted=1&loop=1&controls=0&title=0&byline=0&portrait=0&background=1&playsinline=1'
 
@@ -34,7 +34,7 @@ export default function ArchivePage() {
       <div className="bg-white flex justify-center px-4 pt-8 pb-12 sm:pt-10 lg:pt-12">
         <div className="w-full max-w-4xl">
           {vimeoEmbedUrl ? (
-            <div className="relative w-full overflow-hidden rounded-lg shadow-lg" style={{ paddingBottom: '56.25%' }}>
+            <div className="relative w-full overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src={vimeoEmbedUrl}
                 title="2025 Archive highlight video"
